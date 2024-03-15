@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickjacking Test</title>
+    <style>
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Clickjacking Test Page</h1>
+    <p>This website is vulnerable to clickjacking!</p>
+    <iframe src="https://www.usaa.com/" width="100%" height="100%"></iframe>
+</body>
+</html>
